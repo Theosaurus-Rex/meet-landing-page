@@ -8,3 +8,7 @@
   --slate-light: #d1d1df;
   --white: #fafafa;
 }
+
+body {
+  font-family: "Red Hat Display", sans-serif;
+}
