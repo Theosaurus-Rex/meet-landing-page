@@ -18,42 +18,70 @@
       rel="stylesheet"
     />
 
+    <link rel="stylesheet" href="./reset.css" />
     <link rel="stylesheet" href="./styles.css" />
 
     <title>Meet landing page</title>
   </head>
   <body>
     <main>
+      <header>
+        <img class="header__logo" src="./assets/logo.svg" alt="Meet logo" />
+      </header>
       <section class="hero">
-        <img src="./assets/logo.svg" alt="Meet logo" />
         <img
           class="hero__image-small"
           src="./assets/tablet/image-hero.png"
           alt=""
         />
-        <img
-          class="hero__image-large-left"
-          src="./assets/desktop/image-hero-left.png"
-          alt=""
-        />
-        <h1>Group Chat for Everyone</h1>
-        <img
-          class="hero__image-large-right"
-          src="./assets/desktop/image-hero-right.png"
-          alt=""
-        />
-        <p>
+        <div>
+          <img
+            class="hero__image-large-left"
+            src="./assets/desktop/image-hero-left.png"
+            alt=""
+          />
+          <h1 class="hero__title">Group Chat for Everyone</h1>
+          <img
+            class="hero__image-large-right"
+            src="./assets/desktop/image-hero-right.png"
+            alt=""
+          />
+        </div>
+        <p class="hero__subtitle">
           Meet makes it easy to connect with others face-to-face virtually and
           collaborate across any device.
         </p>
-        <button>Download v1.3</button> <a href="#">What is it?</a>
+        <div class="hero__buttons-container">
+          <button class="button button--cyan">
+            Download <span class="button__version">v1.3</span>
+          </button>
+          <a class="button button--purple" href="#">What is it?</a>
+        </div>
       </section>
       <span>01</span>
+      <section class="image-gallery">
+        <img
+          class="image-gallery__image"
+          src="./assets/desktop/image-woman-in-videocall.jpg"
+          alt=""
+        />
+        <img
+          class="image-gallery__image"
+          src="./assets/desktop/image-women-videochatting.jpg"
+          alt=""
+        />
+        <img
+          class="image-gallery__image"
+          src="./assets/desktop/image-men-in-meeting.jpg"
+          alt=""
+        />
+        <img
+          class="image-gallery__image"
+          src="./assets/desktop/image-man-texting.jpg"
+          alt=""
+        />
+      </section>
       <section>
-        <img src="./assets/desktop/image-woman-in-videocall.jpg" alt="" />
-        <img src="./assets/desktop/image-women-videochatting.jpg" alt="" />
-        <img src="./assets/desktop/image-men-in-meeting.jpg" alt="" />
-        <img src="./assets/desktop/image-man-texting.jpg" alt="" />
         <span>Built for modern use</span>
         <h2>Smarter meetings, all in one place</h2>
         <p>
