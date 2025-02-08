@@ -12,3 +12,39 @@
 body {
   font-family: "Red Hat Display", sans-serif;
 }
+
+/* Mobile Displays */
+
+.hero__image-large-left {
+  display: none;
+}
+
+.hero__image-large-right {
+  display: none;
+}
+
+/* Tablet Displays */
+@media screen and (min-width: 48rem) {
+  .hero__image-large-left {
+    display: none;
+  }
+
+  .hero__image-large-right {
+    display: none;
+  }
+}
+
+/* Desktop Displays */
+@media screen and (min-width: 64rem) {
+  .hero__image-large-left {
+    display: block;
+  }
+
+  .hero__image-large-right {
+    display: block;
+  }
+
+  .hero__image-small {
+    display: none;
+  }
+}
