@@ -66,6 +66,7 @@ main {
   flex-direction: column;
   align-items: center;
   gap: 16px;
+  margin-bottom: 32px;
 }
 
 .button {
@@ -79,7 +80,7 @@ main {
   border: none;
 }
 
-.button__version {
+.button__version-cyan {
   color: var(--cyan-light);
   margin-left: 4px;
 }
@@ -88,20 +89,119 @@ main {
   background-color: var(--cyan-dark);
 }
 
+.button__version-purple {
+  color: var(--purple-light);
+  margin-left: 4px;
+}
+
 .button--purple {
   background-color: var(--purple-dark);
   text-decoration: none;
 }
 
+.communication-features {
+  position: relative;
+  background-image: linear-gradient(
+      rgba(77, 150, 169, 0.85),
+      rgba(77, 150, 169, 0.85)
+    ),
+    url("./assets/mobile/image-footer.jpg");
+  background-size: cover;
+  width: 110%;
+  color: var(--white);
+  padding-top: 54px; /* Full height of number bubble to account for overlap effect */
+}
+
+.communication-features__heading {
+  font-size: 2.5rem;
+  font-weight: 900;
+  line-height: 110%;
+}
+
+.communication-features__text {
+  font-size: 1.1rem;
+  font-weight: 500;
+  line-height: 150%;
+  margin: 24px 32px;
+}
+
+.communication-features button {
+  margin-bottom: 64px;
+}
+
+.features__highlight-heading {
+  color: var(--cyan-dark);
+  font-size: 1rem;
+  font-weight: 900;
+  line-height: 110%;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  margin-bottom: 16px;
+}
+
+.features__heading {
+  font-size: 2.5rem;
+  font-weight: 900;
+  line-height: 110%;
+  color: var(--slate-dark);
+}
+
+.features__text {
+  font-size: 1.1rem;
+  font-weight: 500;
+  line-height: 150%;
+  color: var(--slate);
+  margin: 24px 35px;
+}
+
 .image-gallery {
   display: grid;
   grid-template-columns: repeat(2, auto);
-  margin-left: 32px;
-  margin-right: 32px;
+  margin: 32px;
+  margin-bottom: 64px;
+  gap: 16px;
 }
 
 .image-gallery__image {
   height: 160px;
+  border-radius: 5%;
+}
+
+.section-number {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 32px 0;
+}
+
+.section-number__vertical-rule {
+  width: 1px;
+  height: 80px;
+  background-color: var(--slate-light);
+}
+
+.section-number__number {
+  font-size: 1rem;
+  font-weight: 900;
+  line-height: 150%;
+  color: var(--slate);
+  border: var(--slate-light) 1px solid;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100%;
+  height: 54px;
+  width: 54px;
+  background-color: var(--white);
+}
+
+.section-number--overlap {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: -27px; /* Half the height of the number bubble (54px ÷ 2) */
 }
 
 /* Tablet Displays */
