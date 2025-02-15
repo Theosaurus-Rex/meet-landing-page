@@ -213,6 +213,59 @@ main {
   .hero__image-large-right {
     display: none;
   }
+
+  .hero__image-small {
+    width: 110%;
+    margin-left: -5%;
+    margin-bottom: 72px;
+  }
+
+  .hero__title {
+    font-size: 4rem;
+    margin: 0 160px;
+  }
+
+  .hero__subtitle {
+    margin: 24px 160px;
+  }
+
+  .hero__buttons-container {
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin: 0 160px 120px 160px;
+  }
+
+  .image-gallery {
+    grid-template-columns: repeat(4, auto);
+    margin: 44px;
+    margin-bottom: 64px;
+    gap: 24px;
+  }
+
+  .features__heading {
+    margin: 16px 132px 32px 132px;
+  }
+
+  .features__text {
+    margin: 0 132px 64px 132px;
+  }
+
+  .communication-features {
+    background-image: linear-gradient(
+        rgba(77, 150, 169, 0.85),
+        rgba(77, 150, 169, 0.85)
+      ),
+      url("./assets/tablet/image-footer.jpg");
+  }
+
+  .communication-features__heading {
+    margin: 0 132px 24px 132px;
+  }
+
+  .communication-features__text {
+    margin: 0 132px 24px 132px;
+  }
 }
 
 /* Desktop Displays */
